@@ -1,0 +1,26 @@
+body {
+    background-color: #C1D8C3;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: Montserrat;
+}
+p{
+    color: blue;
+}
+a{
+    text-decoration: none;
+    color: saddlebrown;
+}
+a:visited{
+    text-decoration: none;
+    color: aqua;
+}
+a:hover{
+    text-decoration: none;
+    color: chartreuse;
+    font-weight: bold;
+}
+
+.formatheader{
+    font-size: larger;
+}
