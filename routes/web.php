@@ -45,6 +45,7 @@ Route::get('/index', function () {
 
 Route::get('/pegawai', [PegawaiController::class,'index']);
 Route::get('/pegawai/tambah',[PegawaiController::class,'tambah']);
+Route::get('/pegawai/cari',[PegawaiController::class,'cari']);
 Route::post('/pegawai/store',[PegawaiController::class,'store']);
 Route::get('/pegawai/edit/{id}',[PegawaiController::class,'edit']);
 Route::get('/pegawai/update',[PegawaiController::class,'update']);
