@@ -6,8 +6,8 @@
 
     <p>Cari Data Pegawai :</p>
 	<form action="/pegawai/cari" method="GET">
-		<input type="text" class="form-control" name="cari" placeholder="Cari Pegawai .." value="{{($cari)}}">
-		<input type="submit" class="btn btn-info" value="CARI">
+		<input type="text" class="form-control" name="cari" placeholder="Cari Pegawai ..">
+		<input type="submit" class="btn btn-info mt-2" value="CARI">
 	</form>
 
 	<br/>

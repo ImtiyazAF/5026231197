@@ -5,6 +5,7 @@ use App\Http\Controllers\Link;
 use App\Http\Controllers\PegawaiController2;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\TvController;
 
 Route::get('/', function () {
     return view('page');
@@ -48,5 +49,13 @@ Route::get('/pegawai/tambah',[PegawaiController::class,'tambah']);
 Route::get('/pegawai/cari',[PegawaiController::class,'cari']);
 Route::post('/pegawai/store',[PegawaiController::class,'store']);
 Route::get('/pegawai/edit/{id}',[PegawaiController::class,'edit']);
-Route::get('/pegawai/update',[PegawaiController::class,'update']);
+Route::post('/pegawai/update',[PegawaiController::class,'update']);
 Route::get('/pegawai/hapus/{id}',[PegawaiController::class,'hapus']);
+
+Route::get('/tv', [TvController::class,'index']);
+Route::get('/tv/tambah',[TvController::class,'tambah']);
+Route::get('/tv/cari',[TvController::class,'cari']);
+Route::post('/tv/store',[TvController::class,'store']);
+Route::get('/tv/edit/{id}',[TvController::class,'edit']);
+Route::post('/tv/update',[TvController::class,'update']);
+Route::get('/tv/hapus/{id}',[TvController::class,'hapus']);
