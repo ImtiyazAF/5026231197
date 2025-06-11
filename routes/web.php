@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController2;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\TvController;
+use App\Http\Controllers\KaryawanController;
 
 Route::get('/', function () {
     return view('page');
@@ -59,3 +60,8 @@ Route::post('/tv/store',[TvController::class,'store']);
 Route::get('/tv/edit/{id}',[TvController::class,'edit']);
 Route::post('/tv/update',[TvController::class,'update']);
 Route::get('/tv/hapus/{id}',[TvController::class,'hapus']);
+
+Route::get('/karyawan', [KaryawanController::class,'index']);
+Route::get('/karyawan/tambah',[KaryawanController::class,'tambah']);
+Route::post('/karyawan/store',[KaryawanController::class,'store']);
+Route::get('/karyawan/hapus/{kodepegawai}',[KaryawanController::class,'hapus']);
