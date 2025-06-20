@@ -8,6 +8,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\TvController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\KeranjangBelanjaController;
+use App\Http\Controllers\NilaiController;
 
 Route::get('/', function () {
     return view('page');
@@ -84,3 +85,7 @@ Route::post('/keranjang/update', [KeranjangBelanjaController::class, 'update']);
 
 // Menghapus data keranjang
 Route::get('/keranjang/hapus/{id}', [KeranjangBelanjaController::class, 'hapus3']);
+
+Route::get('/eas', [NilaiController::class,'index']);
+Route::get('/eas/tambah',[NilaiController::class,'tambah']);
+Route::post('/eas/store',[NilaiController::class,'store']);
